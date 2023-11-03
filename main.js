@@ -100,39 +100,39 @@ d20.addEventListener('click', () =>{
 //reset button should have a click listener to reset all data and the whole interface.
 document.querySelector('#reset-button').addEventListener('click', reset)
 
-function reset(){
-  console.log('called')
-  d6.src = './images/start/d6.png'
-  doubleD6.forEach((die) => die.src = './images/start/d6.png')
-  d12.src = './images/start/d12.jpeg'
-  d20.src = './images/start/d20.jpg'
-  while(sixes.length > 0){
-    sixes.pop()
-  }
-  document.querySelector('#d6-rolls-mean').innerText = NA
-  document.querySelector('#d6-rolls-median').innerText = NA
-  document.querySelector('#d6-rolls-mode').innerText = NA
+  function reset(){
+    console.log('called')
+    d6.src = './images/start/d6.png'
+    doubleD6.forEach((die) => die.src = './images/start/d6.png')
+    d12.src = './images/start/d12.jpeg'
+    d20.src = './images/start/d20.jpg'
+    while(sixes.length > 0){
+      sixes.pop()
+    }
+    document.querySelector('#d6-rolls-mean').innerText = 'NA'
+    document.querySelector('#d6-rolls-median').innerText = 'NA'
+    document.querySelector('#d6-rolls-mode').innerText = 'NA'
 
-  while(doubleSixes.length > 0){
-    doubleSixes.pop()
-  }
-  document.querySelector('#double-d6-rolls-mean').innerText = 'NA'
-  document.querySelector('#double-d6-rolls-median').innerText = NA
-  document.querySelector('#double-d6-rolls-mode').innerText = NA
+    while(doubleSixes.length > 0){
+      doubleSixes.pop()
+    }
+    document.querySelector('#double-d6-rolls-mean').innerText = "NA"
+    document.querySelector('#double-d6-rolls-median').innerText = "NA"
+    document.querySelector('#double-d6-rolls-mode').innerText = "NA"
 
-  while(twelves.length > 0){
-    twelves.pop()
-  }
-  document.querySelector('#d12-rolls-mean').innerText = NA
-  document.querySelector('#d12-rolls-median').innerText = NA
-  document.querySelector('#d12-rolls-mode').innerText = NA
+    while(twelves.length > 0){
+      twelves.pop()
+    }
+    document.querySelector('#d12-rolls-mean').innerText = "NA"
+    document.querySelector('#d12-rolls-median').innerText = "NA"
+    document.querySelector('#d12-rolls-mode').innerText = "NA"
   
-  while(twenties.length > 0){
-    twenties.pop()
-  }
-  document.querySelector('#d20-rolls-mean').innerText = NA
-  document.querySelector('#d20-rolls-median').innerText = NA
-  document.querySelector('#d20-rolls-mode').innerText = NA
+    while(twenties.length > 0){
+      twenties.pop()
+    } 
+    document.querySelector('#d20-rolls-mean').innerText = "NA"
+    document.querySelector('#d20-rolls-median').innerText = "NA"
+    document.querySelector('#d20-rolls-mode').innerText = "NA"
 }
 
 /****************************
